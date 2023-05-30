@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: #e5e5e5;
+}
+/*REALIZANDO A CONFIGURAÇÃO GERAL DO HEADER*/
+header{
+  padding: 34px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .logo{
+  margin-right: 26px;
+  display: flex;
+  align-items: center;
+  font-size: 34.5px;
+  font-weight: 600;
+  color: #C92071;
+  gap: 7px;
+}
+
+header .pesquisa{
+  flex: 1;
+  margin-right: 25px;
+  height: 60px;
+  background-color: #47474715;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header .pesquisa input{
+  width: 95%;
+  height: 100%;
+  background-color: transparent ;
+  border: none;
+  line-height: 68px;
+  padding-left: 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+header .pesquisa a{
+  width: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .pesquisa a i{
+  font-size: 28px;
+}
+
+header .acoes{
+  display: flex;
+  align-items: center;
+}
+
+header .header-cadastro{
+  margin-right: 30px;
+  letter-spacing: 0.75px;
+  font-weight: 400;
+  color: #474747;
+  text-decoration: underline;
+}
+
+header .acoes .header-btn-entrar{
+  margin-right: 48px;
+  width: 114px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'inter';
+  border-radius: 8px;
+  background-color: #C92071;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav{
+  width: 100%;
+  margin-top: 40px;
+}
+
+header nav ul{
+  display: flex;
+  gap: 32px;
+}
+
+header nav ul li a{
+  color: #474747;
+}
+
+header nav ul li a:hover {
+    color: #C92071;
+  font-weight: 700;
+  border-bottom: 2px solid #C92071; 
+}
+
+header nav ul li a.active{
+  color: #C92071;
+  font-weight: 700;
+  border-bottom: 2px solid #C92071; 
+}
+/*CONFIGURAÇÃO DO MAIN*/
+main {
+  width: 100%;
+}
+/*REALIZANDO A CONFIGURAÇÃO DO BANNER DO INICIO*/
+main #banner_inicio {
+  position: relative;
+  margin: 124px auto;
+  width: 100%;
+  height: 481px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main #banner_inicio .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  transition-duration: 1s;
+}
+main #banner_inicio .texto {
+  width: 540px;
+  height: 398px;
+  margin-left: 104px;
+
+}
+main #banner_inicio .texto h1 {
+  margin-bottom: 10px;
+  font-size: 64px;
+  line-height: 66px;
+}
+main #banner_inicio .texto p:nth-child(1) {
+  font-size: 20px;
+  color: #f6aa1c;
+}
+main #banner_inicio .texto p:nth-child(3) {
+  font-size: 18px;
+  color: #474747;
+}
+main #banner_inicio .texto button {
+  margin-top: 30px;
+  width: 220px;
+  line-height: 48px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #c92071;
+  transition-duration: 1s;
+}
+main #banner_inicio .texto button:hover {
+  cursor: pointer;
+}
+main #banner_inicio .imagem {
+  width: 740px;
+  position: relative;
+  right: 90px;
+}
+main #banner_inicio .imagem img:nth-child(1) {
+  transform: rotate(-3.34deg);
+  width: 100%;
+  position: absolute;
+  top: -330px;
+  left: 30px;
+}
+main #banner_inicio .imagem img:nth-child(2) {
+  position: absolute;
+  width: 180px;
+  top: -330px;
+  left: 680px;
+}
+main #banner_inicio .radio_buttons {
+  position: absolute;
+  margin: -100px auto;
+  text-align: center;
+  width: 300px;
+  height: 20px;
+  bottom: 53px;
+}
+main #banner_inicio input[type="radio"] {
+  position: relative;
+  right: -28px;
+  z-index: 1;
+  width: 22px;
+  padding: 10px;
+  cursor: pointer;
+  appearance: none;
+}
+/* Estilizar a aparência do radio button personalizado */
+main #banner_inicio input[type="radio"] + label {
+  position: relative;
+  padding-left: 30px; /* Espaçamento para o círculo do radio button */
+  cursor: pointer;
+}
+main #banner_inicio input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px; /* Tamanho do círculo do radio button */
+  height: 20px;
+  border-radius: 50%; /* Forma circular */
+  /* border: 3px solid #C92071; Cor da borda do radio button */
+  background-color: darkgray;
+}
+/* Estilizar o círculo do radio button quando estiver marcado (checked) */
+main #banner_inicio input[type="radio"]:checked + label::before {
+  background-color: #c92071; /* Cor de preenchimento do círculo */
+}
+/*FAZENDO A CONFIGURAÇÃO DAS COLEÇÕES EM DESTAQUE NUMERO 1*/
+main #colecao_destaque {
+  width: 100%;
+  background-color: rgb(236, 233, 243);
+  height: 500px;
+  padding: 5px;
+}
+main #colecao_destaque h1:nth-child(1) {
+  margin-top: 32px;
+  padding: 32px;
+  font-size: 36px;
+  width: 600px;
+  color: #474747;
+  letter-spacing: 1px;
+  text-indent: 130px;
+}
+main #colecao_destaque .container {
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 101px;
+}
+main #colecao_destaque .destaque {
+  position: relative;
+  border-radius: 8px;
+  background-color: #d8e3f2;
+  width: 405px;
+  height: 251px;
+  overflow: hidden;
+}
+main #colecao_destaque .destaque h1 {
+  position: absolute;
+  font-size: 32px;
+  width: 100%;
+  height: 200px;
+  bottom: 20px;
+  line-height: 46px;
+  letter-spacing: 1px;
+  left: 30px;
+  z-index: 2;
+  top: 76px;
+  font-weight: bold;
+}
+main #colecao_destaque .destaque h1 span {
+  position: absolute;
+  left: 0px;
+}
+main #colecao_destaque .destaque h3 {
+  position: absolute;
+  align-items: center;
+  font-size: 16px;
+  width: 96px;
+  height: 29px;
+  border-radius: 29px;
+  background-color: #e7ff86;
+  text-align: center;
+  padding: 6px;
+  top: 34px;
+  left: 30px;
+  color: #474747;
+  font-weight: 700px;
+}
+main #colecao_destaque .destaque button {
+  position: absolute;
+  width: 153px;
+  height: 48px;
+  background-color: #F5F5F5;
+  line-height: 24px;
+  color: #c92071;
+  font-weight: bolder;
+  font-size: 16px;
+  bottom: 30px;
+  border-radius: 8px;
+  border: none;
+  top: 176px;
+  left: 30px;
+  bottom: 35px;
+  cursor: pointer;
+  z-index: 1;
+}
+main #colecao_destaque .destaque button:hover {
+  text-decoration: underline;
+}
+main #colecao_destaque .destaque img {
+  width: 65%;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  z-index: 0;
+}
+main #colecao_destaque .destaque .imagem2 img {
+  width: 50%;
+  top: 30px;
+  rotate: 1deg;
+}
+/*SEGUNDA COLEÇÃO EM DESTAQUE*/
+main #colecao {
+  background-color: rgb(236, 233, 243);
+  padding-top: 100px;
+  width: 100%;
+  height: 525px;
+  text-align: center;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  color: #474747;
+}
+main #colecao h1 {
+  color: #474747;
+  letter-spacing: 3px;
+}
+main #colecao .imagens {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main #colecao .imagens .sombra {
+  box-shadow: 0px 0px 18px #4200ff25;
+}
+main #colecao .imagens h1 {
+  position: absolute;
+  bottom: -50px;
+  left: 30px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+main #colecao .imagens .Camisetas {
+  position: absolute;
+  left: 0;
+}
+main #colecao .imagens .headphone {
+  left: 0px;
+}
+main #colecao .imagens .tenis {
+  position: absolute;
+  left: 40px;
+}
+main #colecao .imagens picture {
+  position: relative;
+  width: 134px;
+  height: 134px;
+  padding: 28px;
+  background-color: #ffffff40;
+  border-radius: 150px;
+  cursor: pointer;
+  transition-duration: 700ms;
+}
+
+main #colecao .imagens picture img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/*PRUDUTOS EM ALTA*/
+main #produtos_em_alta {
+  width: 100%;
+  height: 1000px;
+  background-color: rgb(236, 233, 243);
+  position: relative;
+}
+main #produtos_em_alta .desconto h3 {
+  position: absolute;
+  font-size: 16px;
+  width: 110px;
+  height: 32px;
+  border-radius: 29px;
+  background-color: #e7ff86;
+  text-align: center;
+  padding: 6px;
+  top: 90px;
+  left: 115px;
+  color: #474747;
+  font-weight: 700px;
+}
+main #produtos_em_alta .desconto2 h3 {
+  position: absolute;
+  font-size: 16px;
+  width: 110px;
+  height: 32px;
+  border-radius: 29px;
+  background-color: #e7ff86;
+  text-align: center;
+  padding: 6px;
+  top: 90px;
+  left: 465px;
+  color: #474747;
+  font-weight: 700px;
+}
+main #produtos_em_alta .esquerda a {
+  position: absolute;
+  right: 100px;
+  color: #c92071;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 0.75px;
+  z-index: 1;
+  transition-duration: 400ms;
+}
+main #produtos_em_alta .esquerda a:hover {
+  cursor: pointer;
+}
+main #produtos_em_alta h1:nth-child(1) {
+  text-indent: 110px;
+  font-size: 30px;
+}
+main #produtos_em_alta .container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 24px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+main #produtos_em_alta .container a {
+  text-decoration: none;
+  color: black;
+}
+
+main #produtos_em_alta .produtos {
+  width: 20%;
+  margin-top: 80px;
+}
+
+main #produtos_em_alta .produtos strike {
+  text-decoration: line-through;
+  color: #585757;
+}
+
+main #produtos_em_alta .produtos img {
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 30px;
+}
+main #produtos_em_alta .produtos h3,
+main #produtos_em_alta .produtos main #produtos_em_alta .produtos h2,
+main #produtos_em_alta .produtos h1 {
+  margin-top: 15px;
+}
+/*
+BANNER RODAPÉ
+*/
+main #banner_rodape {
+  width: 100%;
+  height: 600px;
+  background-color: #fff;
+}
+main #banner_rodape .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+main #banner_rodape .container .imagem {
+  width: 600px;
+  margin-left: 104px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+main #banner_rodape .container .imagem .overlay {
+  width: 100%;
+  height: 100%;
+}
+main #banner_rodape .container .imagem .overlay::after {
+  content: ""; /* Adiciona essa linha */
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #4200ff25, white);
+  right: 130px;
+  top: -200px;
+  z-index: 0;
+}
+main #banner_rodape .container .imagem img {
+  position: absolute;
+  width: 100%;
+  right: 110px;
+  top: -140px;
+  z-index: 1;
+}
+main #banner_rodape .container .text {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+main #banner_rodape .container .text h3 {
+  font-size: 14px;
+  color: #c92071;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  position: absolute;
+  left: 5px;
+  top: 82px;
+}
+main #banner_rodape .container .text h1 {
+  font-size: 48px;
+  color: #474747;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 50px;
+  padding-left: 5px;
+}
+main #banner_rodape .container .text p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+  padding-left: 5px;
+}
+main #banner_rodape .container .text button {
+  font-family: inter;
+  width: 200px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 8px;
+  background-color: #c92071;
+  color: #fff;
+  position: absolute;
+  left: 5px;
+  top: 400px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.75px;
+  cursor: pointer;
+  border: none;
+}
+main #banner_rodape .container .text button:hover {
+  font-weight: 700;
+}
+footer {
+  width: 100%;
+  height: 550px;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+footer .bloco_um {
+  width: 550px;
+  height: 50%;
+  color: white;
+  position: relative;
+  margin-top: 80px;
+}
+footer .bloco_um .titulo {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+footer .bloco_um .titulo img {
+  width: 8%;
+  height: 8%;
+  margin-right: 10px;
+}
+footer .bloco_um h1 {
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 37px;
+}
+footer .bloco_um p {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+footer .bloco_um a i {
+  color: white;
+  letter-spacing: 25px;
+  transition-duration: 1s;
+}
+/*Bloco 2*/
+footer .bloco_dois,
+footer .bloco_tres {
+  margin-top: 80px;
+  width: 250px;
+  height: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+footer .bloco_dois h2,
+footer .bloco_tres h2,
+footer .bloco_quatro h2 {
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+footer .bloco_dois a,
+footer .bloco_tres a {
+  color: white;
+  line-height: 42px;
+  font-size: 18px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 48px;
+}
+footer .bloco_quatro {
+  margin-top: 80px;
+  width: 320px;
+  height: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+footer .bloco_quatro address,
+footer .bloco_quatro p {
+  width: 80%;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+footer .bloco_quatro p {
+  margin-top: 30px;
+}
+footer hr {
+  width: 90%;
+  height: 1px;
+  border: 1px solid white;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: white;
+}
+footer .digital {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
