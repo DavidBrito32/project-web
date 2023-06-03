@@ -1,0 +1,2154 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    background-color: #ffff;
+    height: 66px;
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  header .menu_Burguer {
+    display: block;
+    position: relative;
+    left: -90px;
+    align-items: center;
+  }
+
+  header .logo {
+    position: absolute;
+    margin-right: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #c92071;
+    gap: 7px;
+  }
+
+  header .logo img {
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+  }
+
+  header .pesquisa {
+    visibility: hidden;
+  }
+
+  header .pesquisa input {
+    display: none;
+    background-color: transparent;
+    display: flex;
+  }
+
+  header .pesquisa a i {
+    right: 55px;
+    position: absolute;
+    font-size: 22px;
+    visibility: visible;
+    display: block;
+    justify-content: right;
+    margin-right: 18px;
+  }
+
+  header .acoes {
+    visibility: hidden;
+  }
+
+  header .acoes img {
+    width: 35px;
+  }
+
+  header .acoes a .imgaem-carrinho {
+    visibility: visible;
+    position: absolute;
+    right: 5%;
+    top: 22%;
+  }
+
+  header nav {
+    visibility: none;
+    opacity: 0;
+    display: none;
+  }
+
+  /*EDITANDO AS CONFIGURAÇÕES DO MAIN NESTA RESOLUÇÃO:*/
+  main {
+    max-width: 100%;
+  }
+  main #banner_inicio {
+    position: relative;
+    width: 100%;
+    height: 662px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  main #banner_inicio .texto {
+    margin-top: 19px;
+    text-align: center;
+    position: absolute;
+    top: 280px;
+    right: 0;
+    width: 100%;
+    height: 398px;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+  }
+  main #banner_inicio .texto button {
+    display: block;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 320px;
+    width: 405px;
+    margin: 0 auto;
+  }
+
+  main #banner_inicio .imagem {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    filter: drop-shadow(0px 4px 25px rgba(119, 15, 21, 0.08));
+    background-color: #f5f5f5;
+  }
+  main #banner_inicio .imagem img:nth-child(1) {
+    transform: rotate(-3.34deg);
+    position: absolute;
+    display: block;
+    width: 90%;
+    right: 80px;
+    top: -10px;
+  }
+  main #banner_inicio .imagem img:nth-child(2) {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 370px;
+    top: 10px;
+  }
+  main #banner_inicio .radio_buttons {
+    position: absolute;
+    margin: -32px 104px;
+    text-align: center;
+    width: 300px;
+    height: 10px;
+    bottom: -24px;
+  }
+  main #banner_inicio input[type="radio"] {
+    position: relative;
+    right: -28px;
+    z-index: 1;
+    width: 22px;
+    padding: 10px;
+    cursor: pointer;
+    appearance: none;
+  }
+  /* Estilizar a aparência do radio button personalizado */
+  main #banner_inicio input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; /* Espaçamento para o círculo do radio button */
+    cursor: pointer;
+  }
+  main #banner_inicio input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Tamanho do círculo do radio button */
+    height: 20px;
+    border-radius: 50%; /* Forma circular */
+    /* border: 3px solid #C92071; Cor da borda do radio button */
+    background-color: darkgray;
+  }
+  /* Estilizar o círculo do radio button quando estiver marcado (checked) */
+  main #banner_inicio input[type="radio"]:checked + label::before {
+    background-color: #c92071; /* Cor de preenchimento do círculo */
+  }
+
+  /*COLEÇÕES EM DESTAQUE N° 1*/
+
+  main #colecao_destaque {
+    width: 100%;
+    background-color: rgb(236, 233, 243);
+    height: 854px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+  }
+  main #colecao_destaque h1:nth-child(1) {
+    position: absolute;
+    left: -100px;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474747;
+    letter-spacing: 1px;
+  }
+  main #colecao_destaque .container {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  main #colecao_destaque .destaque {
+    position: relative;
+    border-radius: 8px;
+    background-color: #d8e3f2;
+    width: 380px;
+    height: 232px;
+    overflow: hidden;
+  }
+  main #colecao_destaque .destaque h1 {
+    position: absolute;
+    font-size: 24px;
+    width: 100%;
+    height: 200px;
+    bottom: 20px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    left: 30px;
+    z-index: 2;
+    top: 76px;
+    font-weight: bold;
+  }
+  main #colecao_destaque .destaque h1 span {
+    position: absolute;
+    left: 0px;
+  }
+  main #colecao_destaque .destaque h3 {
+    position: absolute;
+    align-items: center;
+    font-size: 14px;
+    width: 80px;
+    height: 26x;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 34px;
+    left: 30px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #colecao_destaque .destaque button {
+    position: absolute;
+    width: 153px;
+    height: 48px;
+    background-color: #f5f5f5;
+    line-height: 24px;
+    color: #c92071;
+    font-weight: bolder;
+    font-size: 16px;
+    bottom: 30px;
+    border-radius: 8px;
+    border: none;
+    top: 176px;
+    left: 20px;
+    bottom: 40px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  main #colecao_destaque .destaque img {
+    width: 281px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    z-index: 0;
+  }
+  main #colecao_destaque .destaque .imagem2 img {
+    width: 50%;
+    top: 10px;
+    rotate: 1deg;
+  }
+
+  /*SEGUNDA COLEÇÃO EM DESTAQUE*/
+  main #colecao {
+    background-color: rgb(236, 233, 243);
+    padding-top: 100px;
+    width: 100%;
+    height: 356px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color: #474747;
+  }
+  main #colecao h1 {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    color: #474747;
+    letter-spacing: 3px;
+    display: block;
+  }
+  main #colecao .imagens {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  main #colecao .imagens .sombra {
+    box-shadow: 0px 0px 18px #4200ff25;
+  }
+  main #colecao .imagens h1 {
+    position: absolute;
+    bottom: -60px;
+    left: 70px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  main #colecao .imagens picture {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff44;
+    cursor: pointer;
+    left: 20px;
+    margin-left: 12px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  main #colecao .imagens picture:nth-child(2) {
+    left: 150px;
+  }
+  main #colecao .imagens picture:nth-child(3) {
+    left: 250px;
+  }
+  main #colecao .imagens picture:nth-child(4) {
+    left: 380px;
+  }
+  main #colecao .imagens picture:nth-child(5) {
+    display: none;
+  }
+
+  main #colecao .imagens picture img {
+    position: absolute;
+    padding: 10px;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+  }
+
+  /*PRODUTOS EM ALTA*/
+  main #produtos_em_alta {
+    width: 95%;
+    height: 1550px;
+    background-color: rgb(236, 233, 243);
+    position: relative;
+  }
+
+  main #produtos_em_alta h1:nth-child(1) {
+    display: none;
+  }
+
+  main #produtos_em_alta .desconto h3 {
+    position: absolute;
+    font-size: 10px;
+    width: 60px;
+    height: 25px;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 15px;
+    left: 5px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #produtos_em_alta .desconto2 h3 {
+    position: absolute;
+    font-size: 10px;
+    width: 60px;
+    height: 25px;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 15px;
+    left: 10px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #produtos_em_alta .esquerda a {
+    position: absolute;
+    right: 0px;
+    color: #c92071;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  main #produtos_em_alta .esquerda a:hover {
+    cursor: pointer;
+  }
+  main #produtos_em_alta h1:nth-child(1) {
+    text-indent: 110px;
+    font-size: 30px;
+  }
+  main #produtos_em_alta .container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-left: 0px;
+  }
+  main #produtos_em_alta .container a {
+    text-decoration: none;
+    color: black;
+  }
+
+  main #produtos_em_alta .produtos {
+    position: relative;
+    width: 105px;
+    left: 0;
+  }
+
+  main #produtos_em_alta .produtos strike {
+    text-decoration: line-through;
+    color: #585757;
+  }
+
+  main #produtos_em_alta .produtos h2 {
+    font-size: 14px;
+  }
+
+  main #produtos_em_alta .produtos img {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 190%;
+    padding-right: 80px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  main #produtos_em_alta .produtos h3,
+  main #produtos_em_alta .produtos main #produtos_em_alta .produtos h2,
+  main #produtos_em_alta .produtos h1 {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+
+  /*BANNER RODAPE*/
+
+  main #banner_rodape {
+    width: 100%;
+    height: 701px;
+    background-color: #f5f5f5;
+    position: relative;
+    top: -200px;
+  }
+  main #banner_rodape .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  main #banner_rodape .container .imagem {
+    width: 100%;
+    margin-left: 104px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  main #banner_rodape .container .imagem .overlay {
+    width: 281px;
+  }
+  main #banner_rodape .container .imagem .overlay::after {
+    content: ""; /* Adiciona essa linha */
+    position: absolute;
+    width: 321px;
+    height: 321px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #4200ff25, white);
+    right: 22%;
+    top: 40px;
+    z-index: 0;
+  }
+  main #banner_rodape .container .imagem img {
+    position: absolute;
+    width: 100%;
+    left: -20%;
+    top: 80px;
+    z-index: 1;
+  }
+  main #banner_rodape .container .text {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -400;
+  }
+  main #banner_rodape .container .text h3 {
+    font-size: 14px;
+    color: #c92071;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    position: absolute;
+    left: 5px;
+    top: 270px;
+  }
+  main #banner_rodape .container .text h1 {
+    font-size: 28px;
+    position: absolute;
+    color: #474747;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 50px;
+    padding-left: 5px;
+    top: 290px;
+    z-index: 1;
+  }
+  main #banner_rodape .container .text p {
+    position: absolute;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    padding-left: 5px;
+    top: 490px;
+    margin-top: -80px;
+  }
+  main #banner_rodape .container .text button {
+    font-family: inter;
+    width: 200px;
+    height: 40px;
+    line-height: 48px;
+    border-radius: 8px;
+    background-color: #c92071;
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    top: 580px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+    border: none;
+  }
+  main #banner_rodape .container .text button:hover {
+    font-weight: 700;
+  }
+  /*FOOTER*/
+
+  footer {
+    width: 100%;
+    height: 1000px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+  }
+  footer .bloco_um {
+    padding-left: 20px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    position: relative;
+    margin: 40px auto;
+  }
+  footer .bloco_um .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+  footer .bloco_um .titulo img {
+    width: 30px;
+  }
+  footer .bloco_um h1 {
+    align-items: center;
+    font-size: 24px;
+  }
+  footer .bloco_um p {
+    font-size: 14px;
+  }
+  footer .bloco_um a i {
+    color: white;
+    letter-spacing: 25px;
+    font-size: 25px;
+  }
+  /*Bloco 2*/
+  footer .bloco_dois,
+  footer .bloco_tres {
+    margin-top: 0;
+    width: 140px;
+    height: 200px;
+    color: white;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  footer .bloco_dois,
+  footer .bloco_tres ul {
+    width: 200px;
+    height: 200px;
+  }
+
+  footer .bloco_dois h2,
+  footer .bloco_tres h2,
+  footer .bloco_quatro h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  footer .bloco_dois a,
+  footer .bloco_tres a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  footer .bloco_quatro {
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+
+  footer .bloco_quatro h2 {
+    font-size: 18px;
+  }
+
+  footer .bloco_quatro address,
+  footer .bloco_quatro p {
+    width: 80%;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  body {
+    background-color: #f5f5f5;
+  }
+  header {
+    padding: 34px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+  }
+
+  /*CONFIGURAÇÕES DO MAIN*/
+
+  main #banner_inicio .texto {
+    width: 340px;
+    height: 398px;
+    position: absolute;
+    left: -50px;
+  }
+
+  main #banner_inicio .texto .oferta {
+    margin-bottom: 20px;
+  }
+  main #banner_inicio .texto h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 66px;
+  }
+
+  main #banner_inicio .imagem img:nth-child(1) {
+    transform: rotate(-3.34deg);
+    width: 80%;
+    position: absolute;
+    top: -190px;
+    left: 300px;
+  }
+  main #banner_inicio .imagem img:nth-child(2) {
+    position: absolute;
+    width: 150px;
+    top: -240px;
+    left: 750px;
+  }
+
+  header .menu_Burguer {
+    display: none;
+  }
+
+  header .logo {
+    margin-right: 26px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #c92071;
+    gap: 7px;
+  }
+
+  header .logo img {
+    width: 25px;
+    height: 25px;
+  }
+
+  header .pesquisa {
+    flex: 1;
+    margin-right: 25px;
+    width: 29px;
+    height: 30px;
+    background-color: #47474715;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  header .pesquisa input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    margin-right: 12px;
+    line-height: 28px;
+    padding-left: 20px;
+    outline: none;
+    font-size: 12px;
+  }
+
+  header .pesquisa a {
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .pesquisa a i {
+    font-size: 20px;
+  }
+
+  header .acoes {
+    display: flex;
+    align-items: center;
+  }
+
+  header .header-cadastro {
+    margin-right: 30px;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+    color: #474747;
+    text-decoration: underline;
+  }
+
+  header .acoes .header-btn-entrar {
+    margin-right: 48px;
+    width: 69px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "inter";
+    border-radius: 8px;
+    background-color: #c92071;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  header nav ul li a {
+    color: #474747;
+  }
+
+  header nav ul li a:hover {
+    color: #c92071;
+    font-weight: 700;
+    border-bottom: 2px solid #c92071;
+  }
+
+  header nav ul li a.active {
+    color: #c92071;
+    font-weight: 700;
+    border-bottom: 2px solid #c92071;
+  }
+
+  /*MAIN*/
+
+  main #banner_inicio {
+    top: -100px;
+    position: relative;
+    width: 100%;
+    height: 662px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  main #banner_inicio .texto {
+    margin-top: 19px;
+    text-align: center;
+    position: absolute;
+    top: 280px;
+    right: 0;
+    width: 90%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+  }
+  main #banner_inicio .texto button {
+    display: block;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 280px;
+    width: 405px;
+    margin: 0 auto;
+  }
+
+  main #banner_inicio .imagem {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    filter: drop-shadow(0px 4px 25px rgba(119, 15, 21, 0.08));
+    background-color: #f5f5f5;
+  }
+  main #banner_inicio .imagem img:nth-child(1) {
+    transform: rotate(-3.34deg);
+    position: absolute;
+    display: block;
+    width: 60%;
+    left: 150px;
+    top: -10px;
+  }
+  main #banner_inicio .imagem img:nth-child(2) {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 620px;
+    top: 10px;
+  }
+  main #banner_inicio .radio_buttons {
+    position: absolute;
+    margin: -32px 104px;
+    text-align: center;
+    width: 300px;
+    height: 10px;
+    bottom: -24px;
+    z-index: 5;
+  }
+  main #banner_inicio input[type="radio"] {
+    position: relative;
+    right: -28px;
+    z-index: 1;
+    width: 22px;
+    padding: 10px;
+    cursor: pointer;
+    appearance: none;
+  }
+  /* Estilizar a aparência do radio button personalizado */
+  main #banner_inicio input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; /* Espaçamento para o círculo do radio button */
+    cursor: pointer;
+  }
+  main #banner_inicio input[type="radio"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px; /* Tamanho do círculo do radio button */
+    height: 20px;
+    border-radius: 50%; /* Forma circular */
+    /* border: 3px solid #C92071; Cor da borda do radio button */
+    background-color: darkgray;
+  }
+  /* Estilizar o círculo do radio button quando estiver marcado (checked) */
+  main #banner_inicio input[type="radio"]:checked + label::before {
+    background-color: #c92071; /* Cor de preenchimento do círculo */
+  }
+
+  /*COLEÇÕES EM DESTAQUE N° 1*/
+
+  main #colecao_destaque {
+    top: -200px;
+    width: 100%;
+    background-color: rgb(236, 233, 243);
+    height: 854px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+  }
+  main #colecao_destaque h1:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: -110px;
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    color: #474747;
+    letter-spacing: 1px;
+  }
+  main #colecao_destaque .container {
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  main #colecao_destaque .destaque {
+    position: relative;
+    border-radius: 8px;
+    background-color: #d8e3f2;
+    width: 380px;
+    height: 232px;
+    overflow: hidden;
+  }
+  main #colecao_destaque .destaque h1 {
+    position: absolute;
+    font-size: 24px;
+    width: 100%;
+    height: 200px;
+    bottom: 20px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    left: 30px;
+    z-index: 2;
+    top: 76px;
+    font-weight: bold;
+  }
+  main #colecao_destaque .destaque h1 span {
+    position: absolute;
+    left: 0px;
+  }
+  main #colecao_destaque .destaque h3 {
+    position: absolute;
+    align-items: center;
+    font-size: 14px;
+    width: 80px;
+    height: 26x;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 34px;
+    left: 30px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #colecao_destaque .destaque button {
+    position: absolute;
+    width: 153px;
+    height: 48px;
+    background-color: #f5f5f5;
+    line-height: 24px;
+    color: #c92071;
+    font-weight: bolder;
+    font-size: 16px;
+    bottom: 30px;
+    border-radius: 8px;
+    border: none;
+    top: 176px;
+    left: 20px;
+    bottom: 40px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  main #colecao_destaque .destaque img {
+    width: 281px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    z-index: 0;
+  }
+  main #colecao_destaque .destaque .imagem2 img {
+    width: 50%;
+    top: 10px;
+    rotate: 1deg;
+  }
+
+  /*SEGUNDA COLEÇÃO EM DESTAQUE*/
+  main #colecao {
+    background-color: rgb(236, 233, 243);
+    padding-top: 100px;
+    width: 100%;
+    height: 356px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color: #474747;
+  }
+  main #colecao h1 {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    color: #474747;
+    letter-spacing: 3px;
+    display: block;
+  }
+  main #colecao .imagens {
+    margin-top: 50px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  main #colecao .imagens .sombra {
+    box-shadow: 0px 0px 18px #4200ff25;
+  }
+  main #colecao .imagens h1 {
+    position: absolute;
+    bottom: -60px;
+    left: 70px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  main #colecao .imagens picture {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffffff44;
+    cursor: pointer;
+    left: 150px;
+    margin-left: 12px;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  main #colecao .imagens picture:nth-child(2) {
+    left: 260px;
+  }
+  main #colecao .imagens picture:nth-child(3) {
+    left: 360px;
+  }
+  main #colecao .imagens picture:nth-child(4) {
+    left: 480px;
+  }
+  main #colecao .imagens picture:nth-child(5) {
+    display: none;
+  }
+
+  main #colecao .imagens picture img {
+    position: absolute;
+    padding: 10px;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+  }
+
+  /*PRODUTOS EM ALTA*/
+  main #produtos_em_alta {
+    width: 100%;
+    height: 890px;
+    background-color: rgb(236, 233, 243);
+    position: relative;
+    top: -150px;
+  }
+
+  main #produtos_em_alta h1:nth-child(1) {
+    display: none;
+  }
+
+  main #produtos_em_alta .desconto h3 {
+    position: absolute;
+    font-size: 10px;
+    width: 60px;
+    height: 24px;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 15px;
+    left: 5px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #produtos_em_alta .desconto2 h3 {
+    position: absolute;
+    font-size: 10px;
+    width: 60px;
+    height: 25px;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 15px;
+    left: 10px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #produtos_em_alta .esquerda a {
+    position: absolute;
+    right: 0px;
+    color: #c92071;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  main #produtos_em_alta .esquerda a:hover {
+    cursor: pointer;
+  }
+  main #produtos_em_alta h1:nth-child(1) {
+    text-indent: 110px;
+    font-size: 30px;
+  }
+  main #produtos_em_alta .container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    margin-left: 0px;
+  }
+  main #produtos_em_alta .container a {
+    text-decoration: none;
+    color: black;
+  }
+
+  main #produtos_em_alta .produtos {
+    position: relative;
+    width: 105px;
+    left: 0;
+  }
+
+  main #produtos_em_alta .produtos strike {
+    text-decoration: line-through;
+    color: #585757;
+  }
+
+  main #produtos_em_alta .produtos h2 {
+    font-size: 14px;
+  }
+
+  main #produtos_em_alta .produtos img {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 190%;
+    padding-right: 80px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+  main #produtos_em_alta .produtos h3,
+  main #produtos_em_alta .produtos main #produtos_em_alta .produtos h2,
+  main #produtos_em_alta .produtos h1 {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+
+  /*BANNER RODAPE*/
+
+  main #banner_rodape {
+    width: 100%;
+    height: 701px;
+    background-color: #f5f5f5;
+    position: relative;
+    top: -200px;
+  }
+  main #banner_rodape .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  main #banner_rodape .container .imagem {
+    width: 100%;
+    margin-left: 104px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  main #banner_rodape .container .imagem .overlay {
+    width: 281px;
+  }
+  main #banner_rodape .container .imagem .overlay::after {
+    content: ""; /* Adiciona essa linha */
+    position: absolute;
+    width: 421px;
+    height: 421px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #4200ff25, white);
+    right: 22%;
+    top: 40px;
+    z-index: 0;
+  }
+  main #banner_rodape .container .imagem img {
+    position: absolute;
+    width: 70%;
+    left: 5%;
+    top: 80px;
+    z-index: 1;
+  }
+  main #banner_rodape .container .text {
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -400;
+  }
+  main #banner_rodape .container .text h3 {
+    font-size: 14px;
+    color: #c92071;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    position: absolute;
+    left: 5px;
+    top: 270px;
+  }
+  main #banner_rodape .container .text h1 {
+    font-size: 28px;
+    position: absolute;
+    color: #474747;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 50px;
+    padding-left: 5px;
+    top: 290px;
+    z-index: 1;
+  }
+  main #banner_rodape .container .text p {
+    position: absolute;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    padding-left: 5px;
+    top: 490px;
+    margin-top: -80px;
+  }
+  main #banner_rodape .container .text button {
+    font-family: inter;
+    width: 90%;
+    height: 40px;
+    line-height: 48px;
+    border-radius: 8px;
+    background-color: #c92071;
+    color: #fff;
+    position: absolute;
+    left: 25px;
+    top: 520px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+    border: none;
+  }
+  main #banner_rodape .container .text button:hover {
+    font-weight: 700;
+  }
+  /*FOOTER*/
+
+  footer {
+    width: 100%;
+    height: 1100px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+  }
+  footer .bloco_um {
+    padding-left: 20px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    position: relative;
+    margin: 40px auto;
+  }
+  footer .bloco_um .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+  footer .bloco_um .titulo img {
+    width: 30px;
+  }
+  footer .bloco_um h1 {
+    align-items: center;
+    font-size: 24px;
+  }
+  footer .bloco_um p {
+    font-size: 14px;
+  }
+  footer .bloco_um a i {
+    color: white;
+    letter-spacing: 25px;
+    font-size: 25px;
+  }
+  /*Bloco 2*/
+  footer .bloco_dois,
+  footer .bloco_tres {
+    margin-top: 0;
+    width: 140px;
+    height: 200px;
+    color: white;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  footer .bloco_dois,
+  footer .bloco_tres ul {
+    width: 200px;
+    height: 200px;
+  }
+
+  footer .bloco_dois h2,
+  footer .bloco_tres h2,
+  footer .bloco_quatro h2 {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  footer .bloco_dois a,
+  footer .bloco_tres a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  footer .bloco_quatro {
+    margin-top: 150px;
+    width: 100%;
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+
+  footer .bloco_quatro h2 {
+    font-size: 18px;
+  }
+
+  footer .bloco_quatro address,
+  footer .bloco_quatro p {
+    width: 80%;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1450px) {
+  body {
+    background-color: #f5f5f5;
+  }
+
+  header {
+    width: 100%;
+    padding: 34px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+  }
+
+  header .menu_Burguer {
+    display: none;
+  }
+
+  header .logo {
+    margin-right: 26px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: #c92071;
+    gap: 7px;
+  }
+
+  header .logo img {
+    width: 25px;
+    height: 25px;
+  }
+
+  header .pesquisa {
+    flex: 1;
+    margin-right: 25px;
+    width: 29px;
+    height: 40px;
+    background-color: #47474715;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  header .pesquisa input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    margin-right: 12px;
+    line-height: 28px;
+    padding-left: 20px;
+    outline: none;
+    font-size: 12px;
+  }
+
+  header .pesquisa a {
+    width: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .pesquisa a i {
+    font-size: 20px;
+  }
+
+  header .acoes {
+    display: flex;
+    align-items: center;
+  }
+
+  header .header-cadastro {
+    margin-right: 30px;
+    letter-spacing: 0.75px;
+    font-weight: 400;
+    color: #474747;
+    text-decoration: underline;
+  }
+
+  header .acoes .header-btn-entrar {
+    margin-right: 48px;
+    width: 69px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "inter";
+    border-radius: 8px;
+    background-color: #c92071;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header nav {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  header nav ul li a {
+    color: #474747;
+  }
+
+  header nav ul li a:hover {
+    color: #c92071;
+    font-weight: 700;
+    border-bottom: 2px solid #c92071;
+  }
+
+  header nav ul li a.active {
+    color: #c92071;
+    font-weight: 700;
+    border-bottom: 2px solid #c92071;
+  }
+
+  /*CONFIGURAÇÕES DO MAIN*/
+
+  main {
+    max-width: 100%;
+  }
+
+  main #banner_inicio {
+    position: relative;
+    margin: 124px auto;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  main #banner_inicio .texto {
+    max-width: 400px;
+    height: 398px;
+    position: absolute;
+    left: -10px;
+    top: -70px;
+  }
+
+  main #banner_inicio .texto .oferta {
+    margin-bottom: 20px;
+  }
+  main #banner_inicio .texto h1 {
+    margin-bottom: 10px;
+    font-size: 64px;
+    line-height: 66px;
+  }
+
+  main #banner_inicio .imagem {
+    max-width: 85%;
+  }
+
+  main #banner_inicio .imagem img:nth-child(1) {
+    transform: rotate(-3.34deg);
+    width: 70%;
+    position: absolute;
+    top: -250px;
+    left: 380px;
+  }
+  main #banner_inicio .imagem img:nth-child(2) {
+    position: absolute;
+    width: 130px;
+    top: -220px;
+    left: 870px;
+  }
+
+  /*COLEÇÃO EM DESTAQUE NUMERO 1° */
+  main #colecao_destaque {
+    width: 100%;
+    background-color: rgb(236, 233, 243);
+    height: 300px;
+    padding: 5px;
+  }
+  main #colecao_destaque h1:nth-child(1) {
+    font-size: 28px;
+    width: 600px;
+    color: #474747;
+    letter-spacing: 1px;
+    text-indent: 84px;
+  }
+  main #colecao_destaque .container {
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+  main #colecao_destaque .destaque {
+    position: relative;
+    border-radius: 8px;
+    background-color: #d8e3f2;
+    width: 305px;
+    height: 221px;
+    overflow: hidden;
+  }
+  main #colecao_destaque .destaque h1 {
+    position: absolute;
+    font-size: 26px;
+    width: 100%;
+    height: 200px;
+    bottom: 20px;
+    line-height: 46px;
+    letter-spacing: 1px;
+    left: 30px;
+    z-index: 2;
+    top: 76px;
+    font-weight: bold;
+  }
+  main #colecao_destaque .destaque h1 span {
+    position: absolute;
+    left: 0px;
+  }
+  main #colecao_destaque .destaque h3 {
+    position: absolute;
+    align-items: center;
+    font-size: 16px;
+    width: 96px;
+    height: 29px;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 34px;
+    left: 30px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #colecao_destaque .destaque button {
+    position: absolute;
+    width: 120px;
+    height: 38px;
+    background-color: #f5f5f5;
+    line-height: 24px;
+    color: #c92071;
+    font-weight: bolder;
+    font-size: 16px;
+    bottom: 30px;
+    border-radius: 8px;
+    border: none;
+    top: 176px;
+    left: 10px;
+    bottom: 35px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  main #colecao_destaque .destaque button:hover {
+    text-decoration: underline;
+  }
+  main #colecao_destaque .destaque img {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 0;
+  }
+  main #colecao_destaque .destaque .imagem2 img {
+    width: 50%;
+    top: 50px;
+    rotate: 1deg;
+  }
+
+  /* SEGUNDA COLEÇÃO EM DESTAQUE*/
+
+  main #colecao {
+    background-color: rgb(236, 233, 243);
+    width: 100%;
+    height: 525px;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    color: #474747;
+  }
+  main #colecao h1 {
+    color: #474747;
+    letter-spacing: 3px;
+  }
+  main #colecao .imagens {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  main #colecao .imagens .sombra {
+    box-shadow: 0px 0px 18px #4200ff25;
+  }
+  main #colecao .imagens h1 {
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  main #colecao .imagens .Camisetas {
+    position: absolute;
+    left: 0;
+  }
+  main #colecao .imagens .headphone {
+    left: 0px;
+  }
+  main #colecao .imagens .tenis {
+    position: absolute;
+    left: 40px;
+  }
+  main #colecao .imagens picture {
+    position: relative;
+    width: 134px;
+    height: 134px;
+    padding: 28px;
+    background-color: #ffffff40;
+    border-radius: 150px;
+    cursor: pointer;
+  }
+
+  main #colecao .imagens picture img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /*PRODUTOS EM DESTAQUE*/
+  main #produtos_em_alta {
+    width: 100%;
+    height: 920px;
+    background-color: rgb(236, 233, 243);
+    position: relative;
+  }
+  main #produtos_em_alta h1:nth-child(1) {
+    text-indent: 140px;
+    font-size: 30px;
+  }
+  main #produtos_em_alta .desconto h3 {
+    position: absolute;
+    font-size: 12px;
+    width: 90px;
+    height: 28px;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 40px;
+    left: 130px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #produtos_em_alta .desconto2 h3 {
+    position: absolute;
+    font-size: 12px;
+    width: 90px;
+    height: 28px;
+    border-radius: 29px;
+    background-color: #e7ff86;
+    text-align: center;
+    padding: 6px;
+    top: 40px;
+    left: 350px;
+    color: #474747;
+    font-weight: 700px;
+  }
+  main #produtos_em_alta .esquerda a {
+    position: absolute;
+    right: 100px;
+    color: #c92071;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    z-index: 1;
+  }
+  main #produtos_em_alta .esquerda a:hover {
+    cursor: pointer;
+  }
+  main #produtos_em_alta .container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  main #produtos_em_alta .container a {
+    text-decoration: none;
+    color: black;
+  }
+
+  main #produtos_em_alta .produtos {
+    width: 22%;
+    height: 22%px;
+    margin-top: 40px;
+  }
+
+  main #produtos_em_alta .produtos strike {
+    text-decoration: line-through;
+    color: #585757;
+  }
+
+  main #produtos_em_alta .produtos img {
+    background-color: #fff;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+  }
+  main #produtos_em_alta .produtos h3,
+  main #produtos_em_alta .produtos main #produtos_em_alta .produtos h2,
+  main #produtos_em_alta .produtos h1 {
+    margin-top: 15px;
+  }
+
+  /*BANNER RODAPÉ*/
+
+  main #banner_rodape {
+    width: 100%;
+    height: 443px;
+    background-color: #fff;
+  }
+  main #banner_rodape .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  main #banner_rodape .container .imagem {
+    width: 400px;
+    margin-left: 104px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  main #banner_rodape .container .imagem .overlay {
+    width: 100%;
+    height: 100%;
+  }
+  main #banner_rodape .container .imagem .overlay::after {
+    content: ""; /* Adiciona essa linha */
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #4200ff25, white);
+    right: 130px;
+    top: -260px;
+    z-index: 0;
+  }
+  main #banner_rodape .container .imagem img {
+    position: absolute;
+    width: 100%;
+    right: 145px;
+    top: -200px;
+    z-index: 1;
+  }
+  main #banner_rodape .container .text {
+    width: 380px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -400;
+  }
+  main #banner_rodape .container .text h3 {
+    font-size: 14px;
+    color: #c92071;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    position: absolute;
+    left: 5px;
+    top: -20px;
+  }
+  main #banner_rodape .container .text h1 {
+    font-size: 38px;
+    position: absolute;
+    color: #474747;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 50px;
+    padding-left: 5px;
+    top: 20px;
+  }
+  main #banner_rodape .container .text p {
+    position: absolute;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    padding-left: 5px;
+    margin-top: -80px;
+  }
+  main #banner_rodape .container .text button {
+    font-family: inter;
+    width: 180px;
+    height: 38px;
+    line-height: 48px;
+    border-radius: 8px;
+    background-color: #c92071;
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    top: 320px;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+    border: none;
+  }
+  main #banner_rodape .container .text button:hover {
+    font-weight: 700;
+  }
+  /*FOOTER*/
+
+  footer {
+    width: 100%;
+    height: 510px;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+  }
+  footer .bloco_um {
+    margin-left: 10px;
+    width: 320px;
+    height: 50%;
+    color: white;
+    position: relative;
+    margin-top: 80px;
+  }
+  footer .bloco_um .titulo {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+  }
+  footer .bloco_um .titulo img {
+    width: 8%;
+    height: 8%;
+    margin-right: 10px;
+  }
+  footer .bloco_um h1 {
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+  footer .bloco_um p {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  footer .bloco_um a i {
+    color: white;
+    letter-spacing: 25px;
+    font-size: 30px;
+  }
+  /*Bloco 2*/
+  footer .bloco_dois,
+  footer .bloco_tres {
+    margin-top: 80px;
+    width: 180px;
+    height: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .bloco_dois h2,
+  footer .bloco_tres h2,
+  footer .bloco_quatro h2 {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  footer .bloco_dois a,
+  footer .bloco_tres a {
+    color: white;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 48px;
+  }
+  footer .bloco_quatro {
+    margin-top: 80px;
+    width: 200px;
+    height: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .bloco_quatro address,
+  footer .bloco_quatro p {
+    width: 80%;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  footer .bloco_quatro p {
+    margin-top: 30px;
+  }
+  footer hr {
+    width: 90%;
+    height: 1px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  footer .digital {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1451px) {
+  main #banner_inicio .imagem img:nth-child(1) {
+    transform: rotate(-3.34deg);
+    width: 105%;
+    position: absolute;
+    top: -350px;
+    left: -60px;
+  }
+  main #banner_inicio .imagem img:nth-child(2) {
+    position: absolute;
+    width: 180px;
+    top: -315px;
+    left: 640px;
+  }
+
+  main #banner_rodape {
+    width: 100%;
+    height: 543px;
+    background-color: #fff;
+  }
+  main #banner_rodape .container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  main #banner_rodape .container .imagem {
+    width: 600px;
+    margin-left: 104px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+  }
+  main #banner_rodape .container .imagem .overlay {
+    width: 100%;
+    height: 100%;
+  }
+  main #banner_rodape .container .imagem .overlay::after {
+    content: ""; /* Adiciona essa linha */
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #4200ff25, white);
+    right: 130px;
+    top: -250px;
+    z-index: 0;
+  }
+  main #banner_rodape .container .imagem img {
+    position: absolute;
+    width: 80%;
+    right: 130px;
+    top: -200px;
+    z-index: 1;
+  }
+  main #banner_rodape .container .text {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  main #banner_rodape .container .text h3 {
+    position: absolute;
+    font-size: 14px;
+    color: #c92071;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    position: absolute;
+    left: 5px;
+    top: 0;
+  }
+  main #banner_rodape .container .text h1 {
+    position: absolute;
+    font-size: 48px;
+    color: #474747;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 50px;
+    padding-left: 5px;
+    top: 50px;
+  }
+  main #banner_rodape .container .text p {
+    margin-top: 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    padding-left: 5px;
+  }
+  main #banner_rodape .container .text button {
+    font-family: inter;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 8px;
+    background-color: #c92071;
+    color: #fff;
+    position: absolute;
+    left: 5px;
+    top: 350px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    cursor: pointer;
+    border: none;
+  }
+  main #banner_rodape .container .text button:hover {
+    font-weight: 700;
+  }
+}
