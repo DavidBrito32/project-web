@@ -1562,16 +1562,16 @@
 
   main #banner_inicio .imagem img:nth-child(1) {
     transform: rotate(-3.34deg);
-    width: 90%;
+    width: 85%;
     position: absolute;
-    top: -290px;
-    left: 340px;
+    top: -320px;
+    left: 400px;
   }
   main #banner_inicio .imagem img:nth-child(2) {
     position: absolute;
-    width: 160px;
+    width: 170px;
     top: -290px;
-    left: 990px;
+    left: 940px;
   }
 
   /*COLEÇÃO EM DESTAQUE NUMERO 1° */
