@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-device-width: 320px) and (max-width: 768px) {
   header {
     display: flex;
     flex-direction: column;
@@ -1729,7 +1729,6 @@
   main #produtos_em_alta {
     width: 100%;
     height: 920px;
-    background-color: rgb(236, 233, 243);
     position: relative;
   }
   main #produtos_em_alta h1:nth-child(1) {
@@ -1806,7 +1805,6 @@
   }
 
   main #produtos_em_alta .produtos img {
-    background-color: #fff;
     border-radius: 5px;
     display: block;
     width: 100%;

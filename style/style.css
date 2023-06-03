@@ -121,30 +121,33 @@ header nav ul{
 
 header nav ul li a{
   color: #474747;
+  position: relative;
 
 }
 
 header nav ul li a:hover {
   color: #C92071;
-  position: relative;
 }
 
 header nav ul li a::after{
   content: '';
+  visibility: hidden;
   position: absolute;
-  width: 10%;
+  width: 5%;
   margin: 0 auto;
-  height: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #C92071;
   bottom: -2px;  
   transition-duration: 600ms;
-  right: 50%;
+  right: 50%; 
   overflow: hidden;
 }
 
 header nav ul li a:hover::after{
+  position: absolute;
+  visibility: visible;
   width: 100%;
+  transition-duration: 600ms;
   right: 0;
 }
 
